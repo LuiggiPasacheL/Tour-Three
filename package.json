@@ -1,0 +1,27 @@
+{
+  "name": "tour-three",
+  "version": "1.0.0",
+  "description": "Proyecto para el curso de formacion de empresas - Grupo 3",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuiggiPasacheL/Tour-Three.git"
+  },
+  "keywords": [
+    "alquiler",
+    "autos",
+    "lima"
+  ],
+  "author": "Grupo3-ISW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuiggiPasacheL/Tour-Three/issues"
+  },
+  "homepage": "https://github.com/LuiggiPasacheL/Tour-Three#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
