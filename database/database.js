@@ -1,19 +1,13 @@
 
 const util = require('util');
 const mysql = require('mysql');
-require('dotenv').config();
+const options = require('./options');
 
-var pool = mysql.createPool({
-  host:      process.env.HOST,
-  database:  process.env.DATABASE,
-  user:      process.env.USERDB,
-  password:  process.env.PASSWORDDB
-});
+var pool = mysql.createPool(options);
 
 pool.query('SELECT 1 + 1 AS solution', (error, results, fields) => {
   if (error) throw error;
-  console.log('The solution is: ', results[0].solution);
-  console.log('Conexion a la base de datos correcta');
+  console.log('La conexion a la base de datos se realizó correctamente');
 });
 
 const query = util.promisify(pool.query);

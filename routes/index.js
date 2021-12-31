@@ -3,7 +3,7 @@ var router = express.Router();
 var usersRouter = require('./usersRouter');
 
 router.get('/', function(req,res){
-  res.render('index', {title: 'Tour Three'})
+  res.render('login');
 })
 
 router.use('/users', usersRouter);
