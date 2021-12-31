@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilosh.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap" rel="stylesheet">
+    <style>
+      .boton-siguiente {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+      }
+      .boton-volver {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+      }
+    </style>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>Alquilar</title>
   </head>
@@ -39,48 +53,40 @@
             <div class="container">
                 <div class="row" style ="padding: 50px;">
                     <div class="col-sm-8">
-                        <h1>Antes de empezar...</h1>
-                        <h1>Seleccione un vehiculo</h1>
+                        <h1>Ahora ingrese su...</h1>
+                        <h1>Fecha estimada de uso</h1>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
-                      <div class="card" style="width: 18rem; margin: 30px">
-                        <img src="../img/auto_1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 1</h5>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem; margin: 30px">
-                        <img src="../img/auto_2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 2</h5>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem; margin: 30px">
-                        <img src="../img/auto_3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 3</h5>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
-                        </div>
-                      </div>
+                  <div class="col-md-6">
+                    <label for="inputFechaInicio" class="form-label">Fecha de inicio</label>
+                    <input type="date" class="form-control" id="inputFechaInicio" name="FechaInicio">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputHoraInicio" class="form-label">Hora de inicio</label>
+                    <input type="time" class="form-control" id="inputHoraInicio" name="HoraInicio">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="inputFechaFin" class="form-label">Fecha de fin</label>
+                    <input type="date" class="form-control" id="inputFechaFin" name="FechaFin">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputHoraFin" class="form-label">Hora de fin</label>
+                    <input type="time" class="form-control" id="inputHoraFin" name="HoraFin">
+                  </div>
+                  <div class="col-6">
+                    <div class="boton-volver">
+                      <a id="btn_volver" href="#" class="btn btn-secondary" >Volver</a>
                     </div>
                   </div>
+                  <div class="col-6">
+                    <div class="boton-siguiente">
+                      <a id="btn_siguiente" href="#" class="btn btn-secondary" >Siguiente</a>
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
 

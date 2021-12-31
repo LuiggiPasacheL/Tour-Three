@@ -6,9 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="paymentform.css">
+    <link href="https://stackpath.bootstrapcdm.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PV1GOfQNHSoD2xbE+QkPxCAF1NEevoEH3S10sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilosh.css">
+    <link rel="stylesheet" href="css/paymentform.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap" rel="stylesheet">
+    <style>
+      .boton-siguiente {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+      }
+      .boton-volver {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>Alquilar</title>
   </head>
@@ -39,50 +59,85 @@
             <div class="container">
                 <div class="row" style ="padding: 50px;">
                     <div class="col-sm-8">
-                        <h1>Antes de empezar...</h1>
-                        <h1>Seleccione un vehiculo</h1>
+                        <h1>Finalmente...</h1>
+                        <h1>Eliga su metodo de pago</h1>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                      <div class="card" style="width: 18rem; margin: 30px">
-                        <img src="../img/auto_1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 1</h5>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
-                        </div>
+                <div class="wrapper">
+                  <h2>Formulario de pago</h2>
+                  <form action="POST">
+                    <div class="input-group">
+                      <div class="input-box">
+                        <input type="text"
+                        placeholder="Nombre en la tarjeta" required
+                        class="name">
+                        <i class ="fa fa-user icon"></i>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem; margin: 30px">
-                        <img src="../img/auto_2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 2</h5>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
-                        </div>
+                    <div class="input-group">
+                      <div class="input-box">
+                        <h4>Detalles del pago</h4>
+                        <input type="radio" name="pay"
+                        id="bc1" checked class="radio">
+                        <label for="bc1"><span><i class ="fa fa-cc-visa"></i>Tarjeta de credito</span></label>
+                        <input type="radio" name="pay"
+                        id="bc2" checked class="radio">
+                        <label for="bc2"><span><i class ="fa fa-cc-paypal"></i>Paypal</span></label>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem; margin: 30px">
-                        <img src="../img/auto_3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 3</h5>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
-                        </div>
+                    <div class="input-group">
+                      <div class="input-box">
+                        <input type="tel"
+                        placeholder="Numero de tarjeta" required
+                        class="name">
+                        <i class ="fa fa-credit-card icon"></i>
                       </div>
                     </div>
-                  </div>
+                    <div class="input-group">
+                      <div class="input-box">
+                        <input type="tel"
+                        placeholder="CVV" required
+                        class="name">
+                        <i class ="fa fa-user icon"></i>
+                      </div>
+                      <div class="input-box">
+                        <select>
+                          <option>01</option>
+                          <option>02</option>
+                          <option>03</option>
+                          <option>04</option>
+                          <option>05</option>
+                          <option>06</option>
+                          <option>07</option>
+                          <option>08</option>
+                          <option>09</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                        </select>
+                        <select>
+                          <option>2022</option>
+                          <option>2023</option>
+                          <option>2024</option>
+                          <option>2025</option>
+                          <option>2026</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="input-group">
+                      <div class="input-box">
+                        <button type="submit" style="margin: 10px">Pagar ahora</button>
+                        <button type="submit" style="margin: 10px">Volver</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
             </div>
+            
         </div>
+        
+        
+        
 
     </header>
 

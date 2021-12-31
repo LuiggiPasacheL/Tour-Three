@@ -6,9 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilosh.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap" rel="stylesheet">
+    <style>
+      .boton-siguiente {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+      }
+      .boton-volver {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>Alquilar</title>
   </head>
@@ -39,48 +56,56 @@
             <div class="container">
                 <div class="row" style ="padding: 50px;">
                     <div class="col-sm-8">
-                        <h1>Antes de empezar...</h1>
-                        <h1>Seleccione un vehiculo</h1>
+                        <h1>Ya casi terminamos...</h1>
+                        <h1>Ingrese su ruta de uso</h1>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                      <div class="card" style="width: 18rem; margin: 30px">
-                        <img src="../img/auto_1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 1</h5>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem; margin: 30px">
-                        <img src="../img/auto_2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 2</h5>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem; margin: 30px">
-                        <img src="../img/auto_3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 3</h5>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
-                        </div>
-                      </div>
+                <div class="row g-3 needs-validation">
+                  <h3>Ciudad: Lima / Perú</h3>
+                  <div class="col-md-4">
+                    <label for="inputDistrito1" class="form-label">Distrito 1</label>
+                    <select class="form-select" aria-label="Default select example" id="idDistrito1">
+                      <option selected>Seleccionar</option>
+                      <option value="1">Distrito 1</option>
+                      <option value="2">Distrito 2</option>
+                      <option value="3">Distrito 3</option>
+                      <option value="4">Distrito 4</option>
+                      <option value="5">Distrito 5</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputDistrito2" class="form-label">Distrito 2</label>
+                    <select class="form-select" aria-label="Default select example" id="idDistrito2">
+                      <option selected>Seleccionar</option>
+                      <option value="1">Distrito 1</option>
+                      <option value="2">Distrito 2</option>
+                      <option value="3">Distrito 3</option>
+                      <option value="4">Distrito 4</option>
+                      <option value="5">Distrito 5</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputDistrito3" class="form-label">Distrito 3</label>
+                    <select class="form-select" aria-label="Default select example" id="idDistrito3">
+                      <option selected>Seleccionar</option>
+                      <option value="1">Distrito 1</option>
+                      <option value="2">Distrito 2</option>
+                      <option value="3">Distrito 3</option>
+                      <option value="4">Distrito 4</option>
+                      <option value="5">Distrito 5</option>
+                    </select>
+                  </div>
+                  <div class="col-6">
+                    <div class="boton-volver">
+                      <a id="btn_volver" href="#" class="btn btn-secondary" >Volver</a>
                     </div>
                   </div>
+                  <div class="col-6">
+                    <div class="boton-siguiente">
+                      <a id="btn_siguiente" href="#" class="btn btn-secondary" >Siguiente</a>
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
 
