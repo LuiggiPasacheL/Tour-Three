@@ -6,40 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilosh.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <title>Ingresar</title>
-    <style>
-      .boton-ingresar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-    .boton-registro {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-      #Titulo {
-          padding: 30px;
-          text-align: center;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 40px;
-          line-height: 45px;
-          color: #ffffff;
-          left: 37.5%;
-        }
-    </style>
+    <title>Alquilar</title>
   </head>
   <body>
    
-    <header class="header">
+    <header class="header_alquilar">
         <div class="bg-dark ">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -48,41 +23,64 @@
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                      <div class=" navg navbar-nav w-100 justify-content-center " >
+                      <div class=" navg-alq navbar-nav w-100 justify-content-center " >
                         <a class="nav-item nav-link active" href="#">inicio</a>
                         <a class="nav-item nav-link" href="#">Terminos y condiciones</a>
                         <a class="nav-item nav-link" href="#">Alquilar un vehiculo</a>
                         <a class="nav-item nav-link" href="#">Contactenos</a>
+                        <a class="nav-item nav-link" href="#">Usuario</a>
                       </div>
                     </div>
                   </nav>
             </div>
         </div>
 
-        <div class="text-header d-flex align-items-center">
+        <div class="text-header_alq d-flex align-items-center">
             <div class="container">
-                <h1 id="Titulo" >Ingresar</h1>
+                <div class="row" style ="padding: 50px;">
+                    <div class="col-sm-8">
+                        <h1>Antes de empezar...</h1>
+                        <h1>Seleccione un vehiculo</h1>
+                    </div>
+                </div>
                 <div class="row">
-                  <div class="col-4"></div>
-                  <form method="post" action="./users/iniciar-sesion" class="col-4">
-                      <div class="mb-3">
-                          <label for="exampleFormControlInput1" class="form-label">Usuario:</label>
-                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Usuario"
-                          name="username"
-                              ">
+                    <div class="col">
+                      <div class="card" style="width: 18rem; margin: 30px">
+                        <img src="../img/auto_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 1</h5>
+                          <a href="#" class="btn btn-secondary"
+                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
+                          <a href="#" class="btn btn-secondary"
+                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
+                        </div>
                       </div>
-                      <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña"
-                          name="password"
-                              >
+                    </div>
+                    <div class="col">
+                      <div class="card" style="width: 18rem; margin: 30px">
+                        <img src="../img/auto_2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 2</h5>
+                          <a href="#" class="btn btn-secondary"
+                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
+                          <a href="#" class="btn btn-secondary"
+                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
+                        </div>
                       </div>
-                      <button class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ingresar</button>
-                      <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Registrarse</a>
-                  </form>
-              </div>
+                    </div>
+                    <div class="col">
+                      <div class="card" style="width: 18rem; margin: 30px">
+                        <img src="../img/auto_3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 3</h5>
+                          <a href="#" class="btn btn-secondary"
+                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
+                          <a href="#" class="btn btn-secondary"
+                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
 

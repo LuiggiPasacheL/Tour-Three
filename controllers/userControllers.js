@@ -17,7 +17,7 @@ async function login(req, res) {
     } else if (passwordDB &&  password === passwordDB) {
         req.session.userid = userDB[0].id;
         req.session.login = true;
-        res.send("credenciales correctas");
+        res.redirect('/../xd');
     } else{
         res.send('credenciales incorrectas');
     }
