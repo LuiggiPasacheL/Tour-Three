@@ -25,7 +25,7 @@ CREATE TABLE vehiculo(
     nomVehiculo VARCHAR(30) NOT NULL,
     marca varchar(30) not null,
     kilometraje int not null,
-    placa varchar(6) int not null
+    placa varchar(6) not null
 );
 
 create table distrito(
@@ -39,7 +39,7 @@ create table pedido(
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario_id INT NOT NULL,
     distrito_id INT NOT NULL,
-    vehiculo_id INT NOT NULL
+    vehiculo_id INT NOT NULL,
     fch_inicio date not null,
     hor_inicio time not null,
     fch_fin date not null,
