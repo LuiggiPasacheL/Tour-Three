@@ -41,11 +41,15 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                       <div class=" navg-alq navbar-nav w-100 justify-content-center " >
-                        <a class="nav-item nav-link active" href="#">inicio</a>
-                        <a class="nav-item nav-link" href="#">Terminos y condiciones</a>
-                        <a class="nav-item nav-link" href="#">Alquilar un vehiculo</a>
-                        <a class="nav-item nav-link" href="#">Contactenos</a>
-                        <a class="nav-item nav-link" href="#">Usuario</a>
+                        <a class="nav-item nav-link active" href="/">inicio</a>
+                        <a class="nav-item nav-link" href="/terminos">Terminos y condiciones</a>
+                        <a class="nav-item nav-link" href="/alquilar_1">Alquilar un vehiculo</a>
+                        <a class="nav-item nav-link" href="/contacto">Contactenos</a>
+                        <a class="nav-item nav-link" href="#">
+                          <form action="/users/terminar-sesion" method="post">
+                            <button>Cerrar Sesión</button>
+                          </form>
+                         </a>
                       </div>
                     </div>
                   </nav>
@@ -97,12 +101,12 @@
                   </div>
                   <div class="col-6">
                     <div class="boton-volver">
-                      <a id="btn_volver" href="#" class="btn btn-secondary" >Volver</a>
+                      <a id="btn_volver" href="/alquilar_2" class="btn btn-secondary" >Volver</a>
                     </div>
                   </div>
                   <div class="col-6">
                     <div class="boton-siguiente">
-                      <a id="btn_siguiente" href="#" class="btn btn-secondary" >Siguiente</a>
+                      <a id="btn_siguiente" href="/alquilar_4" class="btn btn-secondary" >Siguiente</a>
                     </div>
                   </div>
                 </div>
