@@ -19,13 +19,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 30px;
+        padding: 10px;
       }
       .boton-volver {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 30px;
+        padding: 10px;
       }
     </style>
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
@@ -69,7 +69,7 @@
                 </div>
                 <div class="wrapper">
                   <h2>Formulario de pago</h2>
-                  <form action="POST">
+                  <form>
                     <div class="input-group">
                       <div class="input-box">
                         <input type="text"
@@ -127,9 +127,17 @@
                     </div>
                     <div class="input-group">
                       <div class="input-box">
-                        <button type="submit" style="margin: 1px">Pagar ahora 
-                        </button>
-                        <button type="submit" style="margin: 1px">Volver</button>
+                        <!--  <button type="submit" style="margin: 1px">Pagar ahora </button> 
+                        <button type="submit" style="margin: 1px">Volver</button>    -->
+                        <div class="col-12">
+                          <div class="boton-siguiente">
+                            <a id="btn_siguiente" href="/alquilar_5" class="btn btn-secondary" >Siguiente</a>
+                          </div>
+                          <div class="boton-volver">
+                            <a id="btn_volver" href="/alquilar_3" class="btn btn-secondary" >Volver</a>
+                          </div>
+                        </div>
+                        
                       </div>
                     </div>
                   </form>
