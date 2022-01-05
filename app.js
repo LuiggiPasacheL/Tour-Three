@@ -28,8 +28,14 @@ app.use(session({
   saveUninitialized: false
 }));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(function(req, res, next){
+    res.locals.user = req.session.user;
+    res.locals.client = req.session.client;
+    next();
+});
 
 app.use('/', routes);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

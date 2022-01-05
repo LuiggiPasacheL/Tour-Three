@@ -1,5 +1,6 @@
 
 const user = require('../models/user')
+const client = require('../models/client')
 
 async function getForId(req, res) {
     let id = req.params.id;
@@ -15,9 +16,6 @@ async function login(req, res) {
     let username = req.body.username;
     let password = req.body.password;
 
-    console.log(username)
-    console.log(password)
-
     if (!username || !password) {
         res.send('credenciales vacias');
         return;
@@ -29,13 +27,17 @@ async function login(req, res) {
         return;
     }
 
-    console.log(userDB)
+    let clientDB = await client.getForUserId(userDB[0].id);
+    if(!(clientDB[0])){
+        res.send('cliente no existe');
+        return;
+    }
 
     let passwordDB = userDB[0].password;
     if (passwordDB &&  password === passwordDB) {
-        req.session.userid = userDB[0].id;
-        req.session.login = true;
-        console.log('sesion creada userid:', req.session.userid , 'login:', req.session.login);
+        req.session.user = userDB[0];
+        req.session.client = clientDB[0];
+        console.log('sesion creada');
         res.redirect('/')
     } else{
         res.send('credenciales incorrectas');
@@ -46,7 +48,6 @@ function logout (req, res) {
     req.session.destroy();
     res.redirect('/');
     console.log('sesion terminada');
-    // res.send("salida correcta");
 };
 
 async function register (req, res) {
@@ -54,12 +55,25 @@ async function register (req, res) {
     let password = req.body.password;
 
     try {
-        let result = await user.create(username, password);
-        // res.send('Registrado correctamente')
+
+        await user.create(username, password);
+        let lastid = await user.getLastId();
+
+        let formClient = {
+            nombre: req.body.nombre,
+            apellido: req.body.apellido,
+            telefono: req.body.telefono,
+            pais: req.body.pais,
+            ciudad: req.body.ciudad,
+            codPostal: req.body.codPostal,
+            usuario_id: lastid
+        }
+
+        await client.create(formClient)
         await login(req, res);
+
     } catch (error) {
         console.log(error)
-        // res.send('Error al registrar')
         res.redirect('.')
     }
 }
