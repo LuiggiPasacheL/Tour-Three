@@ -52,12 +52,15 @@ function logout (req, res) {
 async function register (req, res) {
     let username = req.body.username;
     let password = req.body.password;
+
     try {
         let result = await user.create(username, password);
-        res.send('Registrado correctamente')
+        // res.send('Registrado correctamente')
+        await login(req, res);
     } catch (error) {
         console.log(error)
-        res.send('Error al registro')
+        // res.send('Error al registrar')
+        res.redirect('.')
     }
 }
 

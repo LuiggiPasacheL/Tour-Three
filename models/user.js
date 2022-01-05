@@ -14,6 +14,5 @@ module.exports ={
     getForId: async function (id){
         let data = await query(`SELECT * FROM usuario where id='${id}' LIMIT 1`);
         return data;
-    }
-
+    },
 }

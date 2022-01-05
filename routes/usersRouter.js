@@ -9,6 +9,7 @@ router.post('/terminar-sesion', authController.ifFalseRedirectLogin, userControl
 router.get('/oculto', authController.ifFalseRedirectLogin, (req,res) => {
     res.send('login correcto')
 })
+router.post('/registro', authController.ifTrueRedirectInicio, userController.register)
 router.get('/:id([0-9])', userController.getForId)
 
 module.exports = router;

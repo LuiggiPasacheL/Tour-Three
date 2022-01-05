@@ -56,14 +56,16 @@
         <div class="text-header d-flex align-items-center">
             <div class="container">
                 <h1 id="Titulo" >Registro de usuario</h1>
-                <form class="row g-3">
+                <form class="row g-3" method="post" action="/users/registro">
                     <div class="col-md-6">
                       <label for="inputEmail" class="form-label">Correo:</label>
-                      <input type="email" class="form-control" id="inputEmail" placeholder="Correo / Email" required="">
+                      <input name="username" type="email" class="form-control" id="inputEmail" placeholder="Correo / Email" required=""
+                      >
                     </div>
                     <div class="col-md-6">
                       <label for="inputPassword" class="form-label">Contraseña:</label>
-                      <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña / Password" required="">
+                      <input name="password" type="password" class="form-control" id="inputPassword" placeholder="Contraseña / Password" required=""
+                      >
                     </div>
                     <div class="col-4">
                       <label for="inputName" class="form-label">Nombres:</label>
@@ -110,7 +112,7 @@
           <div class="box">
               <figure>
                   <a href="#">
-                      <img src="../img/logo_2.png" alt="Logo de SLee Dw">
+                      <img src="/img/logo_2.png" alt="Logo de SLee Dw">
                   </a>
               </figure>
           </div>
