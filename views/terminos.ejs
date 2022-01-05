@@ -26,11 +26,15 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                       <div class=" navg navbar-nav w-100 justify-content-center " >
-                        <a class="nav-item nav-link active" href="#">inicio</a>
-                        <a class="nav-item nav-link" href="http://127.0.0.1:5500/public/terminos.html">Terminos y condiciones</a>
-                        <a class="nav-item nav-link" href="#">Alquilar un vehiculo</a>
-                        <a class="nav-item nav-link" href="http://127.0.0.1:5500/public/contacto.html#">Contactenos</a>
-                        <a class="nav-item nav-link" href="#">Usuario</a>
+                        <a class="nav-item nav-link active" href="/">inicio</a>
+                        <a class="nav-item nav-link" href="/terminos">Terminos y condiciones</a>
+                        <a class="nav-item nav-link" href="/alquilar_1">Alquilar un vehiculo</a>
+                        <a class="nav-item nav-link" href="/contacto">Contactenos</a>
+                        <a class="nav-item nav-link" href="#">
+                          <form action="/users/terminar-sesion" method="post">
+                            <button>Cerrar Sesión</button>
+                          </form>
+                         </a>
                       </div>
                     </div>
                   </nav>

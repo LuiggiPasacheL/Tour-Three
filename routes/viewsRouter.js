@@ -14,7 +14,7 @@ router.get('/alquilar_3', authController.ifFalseRedirectLogin, viewsController.a
 router.get('/alquilar_4', authController.ifFalseRedirectLogin, viewsController.alquilar_4);
 router.get('/alquilar_5', authController.ifFalseRedirectLogin, viewsController.alquilar_5);
 
-router.get('/contacto', viewsController.contacto);
-router.get('/terminos', viewsController.terminos);
+router.get('/contacto', authController.ifFalseRedirectLogin, viewsController.contacto);
+router.get('/terminos', authController.ifFalseRedirectLogin, viewsController.terminos);
 
 module.exports = router;
