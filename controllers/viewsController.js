@@ -6,8 +6,7 @@ module.exports = {
     },
 
     index_post: function (req, res){
-        let id = req.session.userid;
-        res.render('index_post', {id})
+        res.render('index_post')
     },
 
     login: function (req, res){

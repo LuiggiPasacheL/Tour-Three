@@ -1,6 +1,6 @@
 
 function verifyAuth (req){
-    return (req.session && req.session.userid && req.session.login);
+    return (req.session && req.session.user && req.session.client);
 }
 
 function ifFalseRedirectLogin (req, res, next ){

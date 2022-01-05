@@ -15,4 +15,9 @@ module.exports ={
         let data = await query(`SELECT * FROM usuario where id='${id}' LIMIT 1`);
         return data;
     },
+
+    getLastId: async function (){
+        let id = await query('SELECT id FROM usuario order by id desc limit 1');
+        return id[0].id;
+    }
 }
