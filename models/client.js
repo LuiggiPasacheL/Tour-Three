@@ -15,6 +15,6 @@ module.exports ={
         await query(`INSERT INTO cliente(nombre, apellido, telefono, pais, ciudad, codPostal, usuario_id) VALUES
                     ('${client.nombre}','${client.apellido}','${client.telefono}', '${client.pais}', '${client.ciudad}',
                     '${client.codPostal}','${client.usuario_id}')`);
-    }
+    },
 
 }

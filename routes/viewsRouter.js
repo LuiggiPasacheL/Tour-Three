@@ -3,6 +3,8 @@ var router = express.Router();
 var viewsController = require('../controllers/viewsController');
 var authController = require('../controllers/authController');
 
+router.get('/terminos', viewsController.terminos);
+
 router.get('/', authController.ifTrueRedirectInicio, viewsController.index_pre);
 router.get('/login', authController.ifTrueRedirectInicio, viewsController.login);
 router.get('/registro', authController.ifTrueRedirectInicio, viewsController.registro);
@@ -13,8 +15,6 @@ router.get('/alquilar_2', authController.ifFalseRedirectLogin, viewsController.a
 router.get('/alquilar_3', authController.ifFalseRedirectLogin, viewsController.alquilar_3);
 router.get('/alquilar_4', authController.ifFalseRedirectLogin, viewsController.alquilar_4);
 router.get('/alquilar_5', authController.ifFalseRedirectLogin, viewsController.alquilar_5);
-
 router.get('/contacto', authController.ifFalseRedirectLogin, viewsController.contacto);
-router.get('/terminos', viewsController.terminos);
 
 module.exports = router;

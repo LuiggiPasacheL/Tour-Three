@@ -3,11 +3,11 @@ function verifyAuth (req){
     return (req.session && req.session.user && req.session.client);
 }
 
-function ifFalseRedirectLogin (req, res, next ){
+function ifFalseRedirectLogin (req, res, next){
     if (verifyAuth(req))
         return next();
     else
-        res.redirect('http://localhost:5000/login');
+        res.redirect('http://localhost:5000/login')
 };
 
 function ifTrueRedirectInicio (req, res, next){
