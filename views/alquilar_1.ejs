@@ -48,42 +48,30 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
-                      <div class="card" style="width: 18rem; margin: 30px">
-                        <img src="/img/auto_1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 1</h5>
-                          <a href="/alquilar_2" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
+                    <% if(vehiculos[0]) { %>
+                      <% for(let i = 0; i < vehiculos.length; i++){ %>
+                      <div class="col">
+                        <div class="card" style="width: 18rem; margin: 30px">
+                          <img src="/img/<%- vehiculos[i].img %>" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;"><%- vehiculos[i].nomVehiculo %></h5>
+                            <a href="/alquilar_2/<%- vehiculos[i].id %>" class="btn btn-secondary"
+                              style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
+                            <a href="#" class="btn btn-secondary"
+                              style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem; margin: 30px">
-                        <img src="/img/auto_2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 2</h5>
-                          <a href="/alquilar_2" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
-                        </div>
+                      <% } %>
+                    <% }else{ %>
+                      <div class="col-sm-16" style="text-align: center;">
+                        <h1>No se han encontrado vehiculos disponibles</h1>
+                        <a href="/" class="btn btn-primary">volver</a>
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="card" style="width: 18rem; margin: 30px">
-                        <img src="/img/auto_3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title" style="display: flex; justify-content: center; align-items: center;">Vehiculo 3</h5>
-                          <a href="/alquilar_2" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Seleccionar</a>
-                          <a href="#" class="btn btn-secondary"
-                            style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a>
-                        </div>
-                      </div>
-                    </div>
+                      <script>
+                        console.log('llena la tabla vehiculo')
+                      </script>
+                    <% } %> 
                   </div>
             </div>
         </div>

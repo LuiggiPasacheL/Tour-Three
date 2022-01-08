@@ -72,9 +72,9 @@
                     <div class="info_1">
                         <h3>Vehiculo seleccionado:</h3>
                         <div class="card" style="width: 18rem; margin: 30px">
-                          <img src="/img/auto_1.jpg" class="card-img-top" alt="..."> <!-- TRAER IMAGEN SELECCIONADO -->
+                          <img src="/img/<%- vehiculo_img %>" class="card-img-top" alt="..."> <!-- TRAER IMAGEN SELECCIONADO -->
                           <div class="card-body">
-                            <h5 class="card-title" style="display: flex; justify-content: center; align-items: center; color: black">Vehiculo X</h5> <!-- TRAER VEHICULO SELECCIONADO -->
+                            <h5 class="card-title" style="display: flex; justify-content: center; align-items: center; color: black">Vehiculo <%- vehiculo_id %></h5> <!-- TRAER VEHICULO SELECCIONADO -->
                             <a href="#" class="btn btn-secondary"
                               style="display: flex; justify-content: center; align-items: center; margin: 10px">Ver detalles</a> <!-- TRAER DETALLES SELECCIONADO -->
                           </div>
@@ -86,21 +86,21 @@
                         <div class="row">
                             <div class="col-md-6">
                               <label for="inputFechaInicio" class="form-label">Fecha de inicio</label>
-                              <label for="outputFechaInicio">XXXXXXXXXX</label> <!-- TRAER FECHA SELECCIONADA -->
+                              <label for="outputFechaInicio"><%- fecha_inicio %></label> <!-- TRAER FECHA SELECCIONADA -->
                             </div>
                             <div class="col-md-6">
                               <label for="inputHoraInicio" class="form-label">Hora de inicio</label>
-                              <label for="outputHoraInicio">XXXXXXXXXX</label> <!-- TRAER HORA SELECCIONADA -->
+                              <label for="outputHoraInicio"><%- hora_inicio %></label> <!-- TRAER HORA SELECCIONADA -->
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                               <label for="inputFechaFin" class="form-label">Fecha de fin</label>
-                              <label for="outputFechaFin">XXXXXXXXXX</label> <!-- TRAER FEHCA SELECCIONADA -->
+                              <label for="outputFechaFin"><%- fecha_fin %></label> <!-- TRAER FEHCA SELECCIONADA -->
                             </div>
                             <div class="col-md-6">
                               <label for="inputHoraFin" class="form-label">Hora de fin</label>
-                              <label for="outputHoraFin">XXXXXXXXXX</label> <!-- TRAER HORA SELECCIONADA -->
+                              <label for="outputHoraFin"><%- hora_fin %></label> <!-- TRAER HORA SELECCIONADA -->
                             </div>
                         </div>
                     </div>
@@ -110,19 +110,19 @@
                         <div class="row">
                             <div class="col-md-6">
                               <label for="distrito_1" class="form-label">Distrito 1:</label>
-                              <label for="outputDistrito_1">XXXXXXXXXX</label> <!-- TRAER DISTRITO SELECCIONADO SI ES NULL COLOCAR "---"" -->
+                              <label for="outputDistrito_1"><%- distrito_1 %></label> <!-- TRAER DISTRITO SELECCIONADO SI ES NULL COLOCAR "---"" -->
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                               <label for="distrito_2" class="form-label">Distrito 2:</label>
-                              <label for="outputDistrito_2">XXXXXXXXXX</label> <!-- TRAER DISTRITO SELECCIONADO SI ES NULL COLOCAR "---"" -->
+                              <label for="outputDistrito_2"><%- distrito_2 %></label> <!-- TRAER DISTRITO SELECCIONADO SI ES NULL COLOCAR "---"" -->
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                               <label for="distrito_3" class="form-label">Distrito 3:</label>
-                              <label for="outputDistrito_3">XXXXXXXXXX</label> <!-- TRAER DISTRITO SELECCIONADO SI ES NULL COLOCAR "---"" -->
+                              <label for="outputDistrito_3"><%- distrito_3 %></label> <!-- TRAER DISTRITO SELECCIONADO SI ES NULL COLOCAR "---"" -->
                             </div>
                         </div>
                     </div>
@@ -131,7 +131,7 @@
                         <div class="col-4" style="padding-top: 70px;">
                             <a href="#" class="btn btn-secondary"
                                   style="display: flex; justify-content: center; align-items: center; margin: 10px">Descargar información</a>
-                            <a href="/index_pre" class="btn btn-secondary"
+                            <a href="/" class="btn btn-secondary"
                                   style="display: flex; justify-content: center; align-items: center; margin: 10px">Ir al inicio</a>
                         </div>
                     </div>

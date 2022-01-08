@@ -1,195 +1,222 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="paymentform.css">
-    <link href="https://stackpath.bootstrapcdm.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PV1GOfQNHSoD2xbE+QkPxCAF1NEevoEH3S10sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="paymentform.css">
+  <link href="https://stackpath.bootstrapcdm.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PV1GOfQNHSoD2xbE+QkPxCAF1NEevoEH3S10sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilosh.css">
-    <link rel="stylesheet" href="css/paymentform.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap" rel="stylesheet">
-    <style>
-      .boton-siguiente {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-      }
-      .boton-volver {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-      }
-    </style>
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <title>Alquilar</title>
-  </head>
-  <body>
-   
-    <header class="header_alquilar">
-        <div class="bg-dark ">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                      <div class=" navg-alq navbar-nav w-100 justify-content-center " >
-                        <a class="nav-item nav-link active" href="/">inicio</a>
-                        <a class="nav-item nav-link" href="/terminos">Terminos y condiciones</a>
-                        <a class="nav-item nav-link" href="/alquilar_1">Alquilar</a>
-                        <a class="nav-item nav-link" href="/contacto">Contactenos</a>
-                        <a class="nav-item nav-link" href="#">
-                          <form action="/users/terminar-sesion" method="post">
-                            <button class="btn-cerrar">Cerrar sesión</button>
-                          </form>
-                        </a>
-                      </div>
-                    </div>
-                  </nav>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilosh.css">
+  <link rel="stylesheet" href="css/paymentform.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat&display=swap" rel="stylesheet">
+  <style>
+    .boton-siguiente {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .boton-volver {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  <title>Alquilar</title>
+</head>
+
+<body>
+
+  <header class="header_alquilar">
+    <div class="bg-dark ">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class=" navg-alq navbar-nav w-100 justify-content-center ">
+              <a class="nav-item nav-link active" href="/">inicio</a>
+              <a class="nav-item nav-link" href="/terminos">Terminos y condiciones</a>
+              <a class="nav-item nav-link" href="/alquilar_1">Alquilar</a>
+              <a class="nav-item nav-link" href="/contacto">Contactenos</a>
+              <a class="nav-item nav-link" href="#">
+                <form action="/users/terminar-sesion" method="post">
+                  <button class="btn-cerrar">Cerrar sesión</button>
+                </form>
+              </a>
             </div>
-        </div>
-
-        <div class="text-header_alq d-flex align-items-center">
-            <div class="container">
-                <div class="row" style ="padding: 50px;">
-                    <div class="col-sm-8">
-                        <h1>Finalmente...</h1>
-                        <h1>Eliga su metodo de pago</h1>
-                    </div>
-                </div>
-                <div class="wrapper">
-                  <h2>Formulario de pago</h2>
-                  <form>
-                    <div class="input-group">
-                      <div class="input-box">
-                        <input type="text"
-                        placeholder="Nombre en la tarjeta" required
-                        class="name">
-                        <i class ="fa fa-user icon"></i>
-                      </div>
-                    </div>
-                    <div class="input-group" >
-                      <div class="input-box">
-                        <h4>Detalles del pago</h4>
-                        <label style="width: 100%;" for="bc1"><span><i class ="fa fa-cc-visa"></i>Tarjeta de credito</span></label>
-                      </div>
-                    </div>
-                    <div class="input-group">
-                      <div class="input-box">
-                        <input type="tel"
-                        placeholder="Numero de tarjeta" required
-                        class="name">
-                        <i class ="fa fa-credit-card icon"></i>
-                      </div>
-                    </div>
-                    <div class="input-group">
-                      <div class="input-box">
-                        <input type="tel"
-                        placeholder="CVV" required
-                        class="name">
-                        <i class ="fa fa-user icon"></i>
-                      </div>
-                    </div>
-                    <div class="input-group">
-                      <div class="input-box" style="padding: 10px;">
-                        <select>
-                          <option>01</option>
-                          <option>02</option>
-                          <option>03</option>
-                          <option>04</option>
-                          <option>05</option>
-                          <option>06</option>
-                          <option>07</option>
-                          <option>08</option>
-                          <option>09</option>
-                          <option>10</option>
-                          <option>11</option>
-                          <option>12</option>
-                        </select>
-                        <select>
-                          <option>2022</option>
-                          <option>2023</option>
-                          <option>2024</option>
-                          <option>2025</option>
-                          <option>2026</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="input-group">
-                      <div class="input-box">
-                        <!--  <button type="submit" style="margin: 1px">Pagar ahora </button> 
-                        <button type="submit" style="margin: 1px">Volver</button>    -->
-                        <div class="col-12">
-                          <div class="boton-siguiente">
-                            <a id="btn_siguiente" href="/alquilar_5" class="btn btn-secondary" >Siguiente</a>
-                          </div>
-                          <div class="boton-volver">
-                            <a id="btn_volver" href="/alquilar_3" class="btn btn-secondary" >Volver</a>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </form>
-                </div>
-            </div>
-            
-        </div>
-        
-        
-        
-
-    </header>
-
-
-    <footer class="pie-pagina">
-      <div class="grupo-1">
-          <div class="box">
-              <figure>
-                  <a href="#">
-                      <img src="/img/logo_2.png" alt="Logo de SLee Dw">
-                  </a>
-              </figure>
           </div>
-          <div class="box">
-              <h2>SOBRE NOSOTROS</h2>
-              <p>Desarrollado por G-4</p>
-              <p>Local: Aija 4900, Los Olivos 15304</p>
-              <p>Teléfono: 921301340 / 987654321</p>
+        </nav>
+      </div>
+    </div>
+
+    <div class="text-header_alq d-flex align-items-center">
+      <div class="container">
+        <div class="row" style="padding: 50px;">
+          <div class="col-sm-8">
+            <h1>Finalmente...</h1>
+            <h1>Eliga su metodo de pago</h1>
           </div>
-          <div class="box">
-              <h2>SIGUENOS</h2>
-              <div class="red-social">
-                  <a href="#" class="fa fa-facebook"></a>
-                  <a href="#" class="fa fa-instagram"></a>
-                  <a href="#" class="fa fa-twitter"></a>
-                  <a href="#" class="fa fa-youtube"></a>
+        </div>
+        <div class="wrapper">
+          <h2>Formulario de pago</h2>
+          <form>
+            <div class="input-group">
+              <div class="input-box">
+                <input id='nombre'  type="text" placeholder="Nombre en la tarjeta" required class="name">
+                <i class="fa fa-user icon"></i>
               </div>
-          </div>
+            </div>
+            <div class="input-group">
+              <div class="input-box">
+                <h4>Detalles del pago</h4>
+                <label style="width: 100%;" for="bc1"><span><i class="fa fa-cc-visa"></i>Tarjeta de
+                    credito</span></label>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-box">
+                <input id='numero' type="tel" placeholder="Numero de tarjeta" required class="name">
+                <i class="fa fa-credit-card icon"></i>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-box">
+                <input id='cvv' type="tel" placeholder="CVV" required class="name">
+                <i class="fa fa-user icon"></i>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-box" style="padding: 10px;">
+                <select id='mes'>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+                <select id='año'>
+                  <option>2022</option>
+                  <option>2023</option>
+                  <option>2024</option>
+                  <option>2025</option>
+                  <option>2026</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-box">
+                <!--  <button type="submit" style="margin: 1px">Pagar ahora </button> 
+                        <button type="submit" style="margin: 1px">Volver</button>    -->
+                <div class="col-12">
+                  <div class="boton-siguiente">
+                    <a id="btn_siguiente" href="/alquilar_5" class="btn btn-secondary">Siguiente</a>
+                  </div>
+                  <div class="boton-volver">
+                    <a id="btn_volver" href="/alquilar_3" class="btn btn-secondary">Volver</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="grupo-2">
-          <small>&copy; 2021 <b>Autoservice Perú</b> - Todos los Derechos Reservados.</small>
+
+    </div>
+
+
+
+
+  </header>
+
+
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="/img/logo_2.png" alt="Logo de SLee Dw">
+          </a>
+        </figure>
       </div>
+      <div class="box">
+        <h2>SOBRE NOSOTROS</h2>
+        <p>Desarrollado por G-4</p>
+        <p>Local: Aija 4900, Los Olivos 15304</p>
+        <p>Teléfono: 921301340 / 987654321</p>
+      </div>
+      <div class="box">
+        <h2>SIGUENOS</h2>
+        <div class="red-social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <small>&copy; 2021 <b>Autoservice Perú</b> - Todos los Derechos Reservados.</small>
+    </div>
   </footer>
 
-        <section>
+  <section>
 
-        </section>
+  </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <script>
+    document.getElementById('btn_siguiente').addEventListener('click', (ev) => {
+      let nomTarjeta = document.getElementById('nombre').value;
+      let numTarjeta = document.getElementById('numero').value;
+      let cvv = document.getElementById('cvv').value;
+      let mesTarjeta = document.getElementById('mes').value;
+      let añoTarjeta = document.getElementById('año').value;
+
+      fetch('/alquilar_5', {
+        method: 'POST',
+        body: JSON.stringify({ nomTarjeta, numTarjeta, cvv, mesTarjeta, añoTarjeta}),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }).then(res => res.json())
+        .catch(error => console.error('Error:', error))
+        .then(response => console.log('Success:', response));
+    })
+  </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

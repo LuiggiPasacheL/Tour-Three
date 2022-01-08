@@ -25,7 +25,8 @@ CREATE TABLE IF NOT EXISTS vehiculo(
     nomVehiculo VARCHAR(30) NOT NULL,
     marca varchar(30) not null,
     kilometraje int not null,
-    placa varchar(6) not null
+    placa varchar(6) not null,
+    img varchar(30) not null
 );
 
 create table IF NOT EXISTS distrito(

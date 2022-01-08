@@ -1,4 +1,3 @@
-const carsController = require('./carsController')
 
 module.exports = {
 
@@ -24,26 +23,6 @@ module.exports = {
 
     terminos: function(req, res){
         res.render('terminos');
-    },
-
-    alquilar_1: function(req, res){
-        res.render('alquilar_1', { vehiculo: carsController.getAll()});
-    },
-
-    alquilar_2: function(req, res){
-        res.render('alquilar_2');
-    },
-
-    alquilar_3: function(req, res){
-        res.render('alquilar_3');
-    },
-
-    alquilar_4: function(req, res){
-        res.render('alquilar_4');
-    },
-
-    alquilar_5: function(req, res){
-        res.render('alquilar_5');
-    },
+    }
 
 }

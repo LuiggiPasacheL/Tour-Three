@@ -1,9 +1,9 @@
 const car = require('../models/car')
 
 module.exports = {
-    getAll: function (req,res) {
-        let cars = car.getAll();
+    getAll: async function (req,res) {
+        let cars = await car.getAll();
 
-        console.log(cars)
-    }
+        return cars;
+    },
 }
