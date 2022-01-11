@@ -64,32 +64,32 @@
                     </div>
                     <div class="col-md-6">
                       <label for="inputPassword" class="form-label">Contraseña:</label>
-                      <input name="password" type="password" class="form-control" id="inputPassword" placeholder="Contraseña / Password" required=""
+                      <input name="password" type="password" class="form-control" id="inputPassword" placeholder="Contraseña / Password" required="" maxlength="10" minlength="6"
                       >
                     </div>
                     <div class="col-4">
                       <label for="inputName" class="form-label">Nombres:</label>
-                      <input name="nombre" type="text" class="form-control" id="inputName" placeholder="Nombres / Name" required="" pattern="[a-zA-Z]+">
+                      <input name="nombre" type="text" class="form-control" id="inputName" placeholder="Nombres / Name" title="Ingrese su nombre" required="" pattern="[a-zA-Z]+"  maxlength="20">
                     </div>
                     <div class="col-4">
                       <label for="inputLastname" class="form-label">Apellidos:</label>
-                      <input name="apellido" type="text" class="form-control" id="inputLastname" placeholder="Apellidos / Last name" required="" pattern="[a-zA-Z]+">
+                      <input name="apellido" type="text" class="form-control" id="inputLastname" placeholder="Apellidos / Last name" title="Ingrese su apellido" required="" pattern="[a-zA-Z]+"  maxlength="20">
                     </div>
                     <div class="col-4">
                       <label for="inputTelf" class="form-label">Telefono:</label>
-                      <input name="telefono" type="text" class="form-control" id="inputTelf" placeholder="Telefono / Telephone" required="" pattern="[0-9]+" maxlength="9" minlength="9">
+                      <input name="telefono" type="text" class="form-control" id="inputTelf" placeholder="Telefono / Telephone" title="Solo se admite números" required="" pattern="[0-9]+" maxlength="9" minlength="9">
                     </div>
                     <div class="col-md-4">
                       <label for="inputPais" class="form-label">Pais:</label>
-                      <input name="pais" type="text" class="form-control" id="inputPais" placeholder="Pais / Country" required="" pattern="[a-zA-Z]+">
+                      <input name="pais" type="text" class="form-control" id="inputPais" placeholder="Pais / Country" title="Ingrese su país" required="" pattern="[a-zA-Z]+" maxlength="20">
                     </div>
                     <div class="col-md-4">
                       <label for="inputCiudad" class="form-label">Ciudad</label>
-                      <input name="ciudad" type="text" class="form-control" id="inputCiudad" placeholder="Ciudad / City" required="" pattern="[a-zA-Z]+">
+                      <input name="ciudad" type="text" class="form-control" id="inputCiudad" placeholder="Ciudad / City" title="Ingrese su ciudad" required="" pattern="[a-zA-Z]+"  maxlength="20">
                     </div>
                     <div class="col-md-4">
                       <label for="inputCodPostal" class="form-label">Codigo Postal:</label>
-                      <input name="codPostal" type="text" class="form-control" id="inputCodPostal" placeholder="Postal / ZIP" required="" pattern="[0-9]+" maxlength="4" minlength="4">
+                      <input name="codPostal" type="text" class="form-control" id="inputCodPostal" placeholder="Postal / ZIP" title="Solo se admite números" required="" pattern="[0-9]+" maxlength="4" minlength="4">
                     </div>
                     <div class="col-12">
                       <a href="/terminos" style="text-align: center; display: flex;
