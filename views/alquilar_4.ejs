@@ -78,7 +78,7 @@
           <form>
             <div class="input-group">
               <div class="input-box">
-                <input id='nombre'  type="text" placeholder="Nombre en la tarjeta" required class="name">
+                <input id='nombre'  type="text" placeholder="Nombre en la tarjeta" title="Ingrese el nombre de su tarjeta" required class="name" pattern="[a-zA-Z]+">
                 <i class="fa fa-user icon"></i>
               </div>
             </div>
@@ -91,13 +91,13 @@
             </div>
             <div class="input-group">
               <div class="input-box">
-                <input id='numero' type="tel" placeholder="Numero de tarjeta" required class="name">
+                <input id='numero' type="tel" placeholder="Numero de tarjeta" title="Solo se admite números" required class="name" pattern="[0-9]+" maxlength="16" minlength="16">
                 <i class="fa fa-credit-card icon"></i>
               </div>
             </div>
             <div class="input-group">
               <div class="input-box">
-                <input id='cvv' type="tel" placeholder="CVV" required class="name">
+                <input id='cvv' type="tel" placeholder="CVV" title="Solo se admite números" required class="name" pattern="[0-9]+" maxlength="3" minlength="3">
                 <i class="fa fa-user icon"></i>
               </div>
             </div>
